@@ -24,7 +24,7 @@ namespace EPAMInterview.Pages.LandingPage
 
         public LandingBasePage ClickSetPreferences()
         {
-            this.Driver.FindElements(By.CssSelector(".privacysettings__allowAllCookies")).Click();
+            this.Driver.FindElement(By.CssSelector(".privacysettings__allowAllCookies")).Click();
                 
             this.Driver.JSClick("document.getElementsByClassName('privacysettings__saveUserPreferences')[0].click();");
 
