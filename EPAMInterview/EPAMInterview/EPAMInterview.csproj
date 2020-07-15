@@ -127,6 +127,7 @@
     <Compile Include="Configuration\PageConfiguration.cs" />
     <Compile Include="Configuration\TestConfiguration.cs" />
     <Compile Include="Configuration\Users.cs" />
+    <Compile Include="Extensions\DriverExtension.cs" />
     <Compile Include="Pages\LandingPage\LandingBasePage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Steps\LandingPageSteps.cs" />

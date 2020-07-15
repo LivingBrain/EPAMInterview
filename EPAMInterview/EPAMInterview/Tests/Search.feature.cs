@@ -106,6 +106,9 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("User Navigates to UBS page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 6
+  testRunner.And("User clicks Set Preferences on Privacy Settings popup", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 7
   testRunner.And("User searches investment using search icon on landing page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }

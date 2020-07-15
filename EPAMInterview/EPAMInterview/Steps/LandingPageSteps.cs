@@ -28,6 +28,12 @@ namespace EPAMInterview.Steps
             this.page.NavigateToLandingPage();
         }
 
+        [When(@"User clicks Set Preferences on Privacy Settings popup")]
+        public void UserClicksSetPreferences()
+        {
+            this.page.ClickSetPreferences();
+        }
+
         [When(@"User searches (.*) using search icon on landing page")]
         public void ClickSearchIcon(string searchSentence)
         {
