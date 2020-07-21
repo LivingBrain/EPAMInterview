@@ -9,5 +9,15 @@ namespace EPAMInterview.Extensions
             var jsExecutor = webDriver as IJavaScriptExecutor;
             jsExecutor?.ExecuteScript(jsCode);
         }
+
+        public static void RefreshPage(this IWebDriver webDriver)
+        {
+            webDriver.Navigate().Refresh();
+        }
+
+        public static void AddNewCookie(this IWebDriver webDriver, Cookie cookie)
+        {
+            webDriver.Manage().Cookies.AddCookie(cookie);
+        }
     }
 }

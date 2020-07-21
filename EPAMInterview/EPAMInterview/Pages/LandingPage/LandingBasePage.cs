@@ -22,9 +22,23 @@ namespace EPAMInterview.Pages.LandingPage
             return this;
         }
 
+        public LandingBasePage AddCookieToHidePopup()
+        {
+            this.Driver.AddNewCookie(new Cookie("ubs_cookie_settings_2.0.2", "0-1"));
+
+            return this;
+        }
+
+        public LandingBasePage RefreshPage()
+        {
+            this.Driver.RefreshPage();
+
+            return this;
+        }
+
         public LandingBasePage ClickSetPreferences()
         {
-            this.Driver.FindElement(By.CssSelector(".privacysettings__allowAllCookies")).Click();
+            var test = this.Driver.FindElements(By.CssSelector(".actionbutton__button"));
                 
             this.Driver.JSClick("document.getElementsByClassName('privacysettings__saveUserPreferences')[0].click();");
 

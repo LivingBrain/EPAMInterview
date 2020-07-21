@@ -39,5 +39,12 @@ namespace EPAMInterview.Steps
         {
             this.page.ClickSearchAndTypeSearchSeantence(searchSentence);
         }
+
+        [When(@"Cookie is added to hide popup and page is refreshed")]
+        public void AddCookieToHidePopup()
+        {
+            this.page.AddCookieToHidePopup().RefreshPage();
+
+        }
     }
 }
