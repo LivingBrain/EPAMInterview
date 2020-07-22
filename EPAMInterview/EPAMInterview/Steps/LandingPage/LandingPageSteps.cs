@@ -31,20 +31,18 @@ namespace EPAMInterview.Steps
         [When(@"User clicks Set Preferences on Privacy Settings popup")]
         public void UserClicksSetPreferences()
         {
-            this.page.ClickSetPreferences();
         }
 
         [When(@"User searches (.*) using search icon on landing page")]
         public void ClickSearchIcon(string searchSentence)
         {
-            this.page.ClickSearchAndTypeSearchSeantence(searchSentence);
+            page.ClickSearchAndTypeSearchSeantence(searchSentence);
         }
 
         [When(@"Cookie is added to hide popup and page is refreshed")]
         public void AddCookieToHidePopup()
         {
             this.page.AddCookieToHidePopup().RefreshPage();
-
         }
     }
 }

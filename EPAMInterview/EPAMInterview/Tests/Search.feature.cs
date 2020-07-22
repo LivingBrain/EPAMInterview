@@ -106,10 +106,19 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("User Navigates to UBS page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 6
-  testRunner.And("Cookie is added to hide popup", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("Cookie is added to hide popup and page is refreshed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 7
   testRunner.And("User searches investment using search icon on landing page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                            "ResultTitle",
+                            "ResultUrl"});
+                table1.AddRow(new string[] {
+                            "Investment Bank",
+                            "https://www.ubs.com/global/en/investment-bank.html"});
+#line 8
+ testRunner.Then("Recommended search result should be as follows", ((string)(null)), table1, "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
