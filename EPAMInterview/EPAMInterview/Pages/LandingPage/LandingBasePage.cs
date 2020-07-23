@@ -53,7 +53,7 @@ namespace EPAMInterview.Pages.LandingPage
         
         public LandingBasePage ClickSelectDomicileButton()
         {
-            Thread.Sleep(1000); //TODO issue with hidding domicile nav fixed by sleep. Need refactor. 
+            Thread.Sleep(1000); //TODO issue with hiding domicile nav fixed by sleep. Need refactor. 
             //Driver.WaitForPageToLoad(BaseConfiguration.MediumTimeout); //document.readyState not fixing this issue
             Driver.FindElement(selectDomicileButton).Click();
             return this;
