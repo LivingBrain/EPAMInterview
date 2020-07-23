@@ -141,6 +141,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Tests\LandingPage.feature" />
     <None Include="Tests\Search.feature" />
   </ItemGroup>
   <ItemGroup />

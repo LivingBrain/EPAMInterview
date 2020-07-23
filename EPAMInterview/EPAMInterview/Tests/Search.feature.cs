@@ -111,14 +111,14 @@ this.ScenarioInitialize(scenarioInfo);
 #line 7
   testRunner.And("User searches investment using search icon on landing page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
                             "ResultTitle",
                             "ResultUrl"});
-                table1.AddRow(new string[] {
+                table3.AddRow(new string[] {
                             "Investment Bank",
                             "https://www.ubs.com/global/en/investment-bank.html"});
 #line 8
- testRunner.Then("Recommended search result should be as follows", ((string)(null)), table1, "Then ");
+ testRunner.Then("Recommended search result should be as follows", ((string)(null)), table3, "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
